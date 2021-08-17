@@ -11,6 +11,8 @@ class Saved extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.black,
         title: Text('Saved'),
+        // ? gets rid of the back button 
+        automaticallyImplyLeading: false,
       ),
       bottomNavigationBar: MyBottomAppbar(),
       body: Center(

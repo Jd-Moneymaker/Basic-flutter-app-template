@@ -11,6 +11,8 @@ class Account extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.black,
         title: Text('Account'),
+        // ? gets rid of the back button
+        automaticallyImplyLeading: false,
       ),
       bottomNavigationBar: MyBottomAppbar(),
       body: Center(

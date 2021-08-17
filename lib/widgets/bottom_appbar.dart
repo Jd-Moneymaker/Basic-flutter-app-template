@@ -6,7 +6,7 @@ class MyBottomAppbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 70,
+      height: 60,
       child: Scaffold(
         floatingActionButton: FloatingActionButton(
           onPressed: () {
@@ -17,12 +17,12 @@ class MyBottomAppbar extends StatelessWidget {
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         bottomNavigationBar: BottomAppBar(
-          elevation: 5,
+          elevation: 7,
           shape: CircularNotchedRectangle(),
           child: Container(
             height: 60,
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
                   width: MediaQuery.of(context).size.width / 2,

@@ -11,6 +11,8 @@ class Chats extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.black,
         title: Text('Chats'),
+        // ? gets rid of the back button
+        automaticallyImplyLeading: false,
       ),
       bottomNavigationBar: MyBottomAppbar(),
       body: Center(

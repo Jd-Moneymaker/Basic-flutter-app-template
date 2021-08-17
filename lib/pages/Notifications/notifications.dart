@@ -10,6 +10,8 @@ class MyNotification extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.black,
         title: Text('Notification'),
+        // ? gets rid of the back button 
+        automaticallyImplyLeading: false,
       ),
       body: Center(
         child: Text('Notifications'),

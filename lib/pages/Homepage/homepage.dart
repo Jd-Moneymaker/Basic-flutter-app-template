@@ -7,15 +7,33 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: Colors.black,
-        title: Text('Homepage'),
-      ),
-      bottomNavigationBar: MyBottomAppbar(),
-      body: Center(
-        child: Text('Homepage'),
-      ),
-    );
+        appBar: AppBar(
+          centerTitle: true,
+          backgroundColor: Colors.black,
+          title: Text('Homepage'),
+          // ? gets rid of the back button
+          automaticallyImplyLeading: false,
+        ),
+        bottomNavigationBar: MyBottomAppbar(),
+        body: ListView(
+          children: [
+            Container(
+              height: 300,
+              color: Colors.blue,
+            ),
+            Container(
+              height: 300,
+              color: Colors.green,
+            ),
+            Container(
+              height: 300,
+              color: Colors.yellow,
+            ),
+            Container(
+              height: 300,
+              color: Colors.red,
+            ),
+          ],
+        ));
   }
 }
